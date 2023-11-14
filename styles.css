@@ -1,0 +1,226 @@
+
+* {
+  margin: 0px;
+  /* padding: 0px; */
+  box-sizing: border-box;
+}
+
+.font-face {
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 18px;
+  color: yellow;
+}
+
+/*HEADER & LOGO*/
+.container-nav {
+  background-color: black;
+  background-size: cover;
+  width: 123%;
+  height: 50%;
+  display: flex;
+}
+
+.nav-content {
+  background-size: cover;
+  width: 20%;
+  height: 30%;
+}
+.logo img {
+  width: 100%;
+  height: 50%;
+}
+
+/*FirstPag*/
+
+.background img {
+  width: 220vh;
+  height: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.presentation {
+  display: flex;
+  width: 110%;
+  height: 100vh;
+  top: 190%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  font-family: "Pixelify Sans", sans-serif;
+  font-size: 400%;
+  color: transparent;
+  flex-direction: column;
+  position: absolute;
+  /*-webkit-text-stroke: 1px #fff ;*/
+  background-image: linear-gradient(yellow, yellow);
+  background-repeat: no-repeat;
+  -webkit-background-clip: text;
+  background-position: -750px 0;
+  animation: backcolor 2s linear infinite alternate;
+}
+@keyframes backcolor {
+  100% {
+    background-position: 0 0;
+  }
+}
+
+/*SECOND PAG*/
+.filter-container-p{
+    display: flex;
+    background-color: black;
+    font-family: "Pixelify Sans", sans-serif;
+    color: aliceblue;
+    padding: 1%;
+    padding:7%;
+    
+}
+
+
+.btn-filter-container{
+   display:flex;
+}
+.filter-list{
+  display:flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Pixelify Sans", sans-serif;
+  padding: 8%;
+  list-style-type: none;
+  width: 100%;
+ 
+ 
+}
+
+/*FILTER BTN STYLE*/
+.btn-item{
+  font-family: "Pixelify Sans", sans-serif;
+  border-radius: 100vmax;
+  font-weight:600 ;
+  cursor:pointer;
+  text-transform: uppercase;
+  align-items: center;
+  position: relative;
+  outline: none;
+  background: black;
+  color:yellow;
+  transition: .4s ease all;
+}
+
+/*CARDS STYLE*/
+.container-card{
+display:flex;
+
+}
+
+/*POKEDEX CONTENT*/
+.poke-container {
+
+  display: flex;
+  background-color: black;
+  width: 101%;
+  font-family: "Pixelify Sans", sans-serif;
+  color: rgb(251, 251, 251);
+  
+
+}
+.pokedex {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ margin-left:1%;
+ margin-right:4%;
+
+}
+
+.pagination{
+  color: yellow;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+/* Mobile  */
+@media screen and (max-width: 767px) {
+  .background img {
+    width: 100%;
+    height: auto;
+  }
+
+  .presentation {
+    font-size: 200%;
+    display: flex;
+    width: 110%;
+    height: 100vh;
+    top: 70%;
+    left: 60%;
+    animation: backcolor 3s linear infinite alternate;
+  }
+
+  .filter-container-p {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+  }
+
+}
+
+
+
+
+/* Tablets */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  
+}
+
+/* Small Desktops and Laptops */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+
+}
+
+/* Large Desktops and Laptops */
+@media screen and (min-width: 1280px) {
+  .background img {
+    width: 100%;
+    height: auto;
+  }
+  .presentation {
+    font-size: 600%;
+    display: flex;
+    width: 110%;
+    height: 100vh;
+    top: 170%;
+    left: 70%;
+    animation: backcolor 3s linear infinite alternate;
+  }
+  .btn-item{
+    font-family: "Pixelify Sans", sans-serif;
+    border-radius: 100vmax;
+    cursor:pointer;
+    text-transform: uppercase;
+    align-items: center;
+    position: relative;
+    outline: none;
+    background: black;
+    color:yellow;
+    transition: .4s ease all;
+  }
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    
+    <!--Header & Logo  -->
+    <header class="container-nav">
+        <nav class = "nav-content">
+            <div class="logo">
+                <img src="https://media.giphy.com/media/tecJUiOAZ5rc4/giphy.gif" alt="logo">
+                </div>
+              </div>
+        </nav>
+    </header>
+
+    <!--First Page Background -->
+    <div class="container-introduction">
+          <div class="background ">
+           <img src = "https://i.pinimg.com/736x/a5/68/06/a56806bce812d4ec85665792d83b809b.jpg" alt="background">
+            <h1 class="presentation">WELCOME TO MAURO POKEDÉX </h1>
+          </div>
+
+
+<div class="filter-container-p">
+    <p class="typeFilter">FILTER BY TYPE:</p>
+    <div class="btn-filter-container">
+        <nav class="pagination" >
+            <ul class="pagination">
+              <li class="page-item" id="previous">
+                <a class="page-link" href="#" tabindex="-1">Anterior</a>
+              </li>
+              <li class="page-item" id="next">
+                <a class="page-link" href="#">Siguiente</a>
+              </li>
+            </ul>
+          </nav>  
+         
+         <!--filter Btn -->
+        <ul class="filter-list">
+
+        <li class="filter-item"><button class=" btn-item" id="view-all">View All</button></li>
+        <li class="filter-item"><button class=" btn-item normal" id="normal">normal</button></li>
+        <li class="filter-item"><button class=" btn-item Fire" id="Fire">Fire</button></li>
+        <li class="filter-item"><button class=" btn-item Water" id="Water">Water</button></li>
+        <li class="filter-item"><button class=" btn-item Grass" id="Grass">Grass</button></li>
+        <li class="filter-item"><button class=" btn-item Electric" id="Electric">Electric</button></li>
+        <li class="filter-item"><button class=" btn-item Ice" id="Ice">Ice</button></li>
+        <li class="filter-item"><button class=" btn-item Fighting" id="Fighting">Fighting</button></li>
+        <li class="filter-item"><button class=" btn-item Poison" id="Poison">Poison</button></li>
+        <li class="filter-item"><button class=" btn-item Ground" id="Ground">Ground</button></li>
+        <li class="filter-item"><button class=" btn-item Flying" id="Flying">Flying</button></li>
+        <li class="filter-item"><button class=" btn-item Psychic" id="Psychic">Psychic</button></li>
+        <li class="filter-item"><button class=" btn-item Bug" id="Bug">Bug</button></li>
+        <li class="filter-item"><button class=" btn-item Rock" id="Rock">Rock</button></li>
+        <li class="filter-item"><button class=" btn-item Ghost" id="Ghost">Ghost</button></li>
+        <li class="filter-item"><button class=" btn-item Dragon" id="Dragon">Dragon</button></li>
+        <li class="filter-item"><button class=" btn-item Steel" id="Steel">Steel</button></li>
+        <li class="filter-item"><button class=" btn-item Fairy" id="Fairy">Fairy</button></li>
+   
+        </ul>
+    </div>
+</div>
+
+    <!--Pokemons info-->
+          <div class="poke-container">
+            <ol class="pokedex" id="pokedex"></ol>
+        </div>
+    </div>
+    <script src="main.js" defer></script>
+</body>  
+
+
+</html>
